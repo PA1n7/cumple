@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #121212;
+}
+
+#back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color:snow;
+    font-family: 'VT323', monospace;
+    font-size: 2em;
+}
+
+#back:hover {
+    background-color: snow;
+    color: black;
+}
+
+.screen {
+    height: 100%;
+    aspect-ratio: 4/3;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.bg{
+    position: fixed;
+    width: 100%;
+    height: 110%;
+    top:-5%;
+    pointer-events: none;
+}
+
+.confetti {
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    animation-name: drop;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+
+@keyframes drop{
+    from{top: -10%;}
+    to{top: 100%}
+}
+
+.screen * {
+    color:snow;
+    font-family: 'VT323', monospace;
+}
+
+.screen h1{
+    font-size: 8em;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#starter nav *{
+    width: 100%;
+    display: inline-block;
+    font-size: 3em;
+}
+
+#starter nav *:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+#santi img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: height 0.5s ease;
+}
+
+#santi p{
+    font-size: 1.5vw;
+}
+
+#santi {
+    display: flex;
+    justify-content: center;
+}
+
+#santi .content {
+    width: 70%;
+}
+
+#santi .content:hover img{
+    height: 20%;
+}
+
+#santi h1 {
+    font-size: 2em;
+}
+
+#pdg pre{
+    font-size: 3vh;
+}
+
+#merchan .left {
+    height: 100%;
+    width: 30%;
+    float: left;
+    border-right: snow 1px solid;
+}
+
+#merchan .left img{
+    height: 33%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+#merchan .right {
+    width: 65%;
+    float: right;
+    height: 100%;
+}
+
+#merchan .right p{
+    font-size: 3vh;
+}
+
+#merchan .video {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#merchan .video video:hover {
+    height: 1000%;
+}
+
+#merchan .video video:active{
+    height: 1000%;
+}
+
+#merchan .video video {
+    height: 100%;
+    transition: height 0.4s ease;
+}
+
+#merchan .video:hover+.extra {
+    display: none;
+}
